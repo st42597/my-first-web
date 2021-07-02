@@ -1,0 +1,7 @@
+.Side-bar{
+    position: fixed;
+    background: rgb(240, 240, 240);
+    transition: all 1s;
+    height: 100vh;
+    width: 15vw;
+}

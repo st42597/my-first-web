@@ -14,3 +14,9 @@
     color: white;
     font-weight: bold;
 }
+.menu-icon{
+    position: absolute;
+    left: 0.5vw;
+    height: 2rem;
+    width: 2rem;
+}
