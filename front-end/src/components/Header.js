@@ -1,17 +1,16 @@
 import './Header.css'
+import menu_icon from 'icons/Menu.png'
 import moment from 'moment';
 import {useInterval} from 'react-use';
 import {useState} from 'react';
-import menu_icon from './Menu.png'
 
 function Header(props) {
     const clickMenu = () => {
-      console.log('a')
-      if(props.sidebarStatus === 'OFF'){
-        props.setsidebarStatus('ON')
+      if(props.sidebarstate === 'OFF'){
+        props.setSidebarstate('ON')
       }
-      else if(props.sidebarStatus === 'ON'){
-        props.setsidebarStatus('OFF')
+      else if(props.sidebarstate === 'ON'){
+        props.setSidebarstate('OFF')
       }
     }
 
@@ -19,7 +18,7 @@ function Header(props) {
     useInterval(() => {
         setCount(count + 1);
     }, 1000);
-    const now = moment().format('MM월 DD일 HH:mm:ss');
+    const now = moment().format('MMM DD (ddd) HH:mm:ss');
 
     return (
       <div className="header-container">
@@ -27,6 +26,7 @@ function Header(props) {
           className="menu-icon" src={menu_icon} alt="menu_icon"
           onClick={clickMenu}
           ></img>
+          <div className="viewStatus">{props.viewstate}</div>
           <div className="clock">{now}</div>
       </div>
     );
