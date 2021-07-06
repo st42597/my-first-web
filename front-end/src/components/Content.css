@@ -1,16 +1,8 @@
 .content-container{
-    z-index: 10;
-    background-color:black;
     position: absolute;
     right: 0;
-    height: 100vh;
+    height: calc(100vh - 2rem - 100px);
+    padding: 100px 15vw 0px 15vw;
     transition: all 1s;
-}
-.title{
-    background-color: aqua;
-    text-align: center;
-    font-size: 48px;
-}
-.content{
-    background-color: darkcyan;
+    overflow: scroll;
 }

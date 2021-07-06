@@ -1,5 +1,4 @@
 .header-container{
-    position: static;
     background: rgb(158, 206, 180);
     height: 2rem;
     width: 100vw;
@@ -14,7 +13,7 @@
 }
 .clock{
     position: absolute;
-    right: 5vw;
+    right: 4vw;
     display: flex;
     line-height: 2rem;
     color: white;

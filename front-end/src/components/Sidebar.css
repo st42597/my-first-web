@@ -1,15 +1,20 @@
 .Side-bar{
     position: absolute;
-    background: rgb(240, 240, 240);
+    background: rgb(200, 200, 200);
     transition: all 1s;
-    height: 100vh;
-    width: 240px;
+    width: 200px;
+    height: calc(100vh - 2rem - 40px);
     padding: 20px;
 }
-.list{
+.Side-bar ul{
+    list-style: none;
+    padding-left: 0px;
     margin: 0;
     padding: 0;
     border: 0;
     background: transparent;
     font-size: inherit;
+}
+.Side-bar ul li:hover{
+    background-color: rgb(0, 0, 0, 0.2);
 }

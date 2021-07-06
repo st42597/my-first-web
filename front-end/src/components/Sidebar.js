@@ -15,13 +15,12 @@ function Sidebar(props) {
         <div
         className="Side-bar"
         style={styles}
-         >
-        <ul>
-            <li><button className="list" onClick={() => clickList('Profile')}>Profile</button></li>
-            <li><button className="list" onClick={() => clickList('Description')}>Description</button></li>
-        </ul>
-          
-      </div>
+        >
+            <ul>
+                <li onClick={() => clickList('Profile')}>Profile</li>
+                <li onClick={() => clickList('Description')}>Description</li>
+            </ul>  
+        </div>
     );
   }
   
