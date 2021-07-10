@@ -9,7 +9,6 @@ function Main() {
   const [sidebarstate, setSidebarstate] = useState('OFF')
   const [viewstate, setViewstate] = useState('Profile')
 
-
   return (
     <div>
         <Header
@@ -21,7 +20,10 @@ function Main() {
         sidebarstate={sidebarstate}
         setViewstate={setViewstate}
         />
-        <Content sidebarstate={sidebarstate}/>
+        <Content
+        sidebarstate={sidebarstate}
+        viewstate={viewstate}
+        />
         <Footer />
     </div>
   );
