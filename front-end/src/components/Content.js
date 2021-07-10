@@ -16,7 +16,7 @@ function Content(props) {
   
     useEffect(() => {
       async function a() {
-        const Profile = await axios.get('http://localhost:5000/' + props.viewstate);
+        const Profile = await axios.get('/Profile');
         console.log(Profile.data.content);
         setMarkdown(Profile.data.content);
       }
@@ -29,7 +29,6 @@ function Content(props) {
       style={styles}
       >
         <div dangerouslySetInnerHTML={{__html: markdown} } />
-          
       </div>
     );
   }
