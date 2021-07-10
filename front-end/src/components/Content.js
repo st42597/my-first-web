@@ -14,9 +14,15 @@ function Content(props) {
     }
     let [markdown, setMarkdown] = useState("");
   
+    let URL;
+    if(process.env.NODE_ENV === "development"){
+      URL = 'http://localhost:5000/';
+    }else{
+      URL = 'http://willkiss.ml:5000/';
+    }
     useEffect(() => {
       async function a() {
-        const Profile = await axios.get('http://localhost:5000/' + props.viewstate);
+        const Profile = await axios.get(URL + props.viewstate);
         console.log(Profile.data.content);
         setMarkdown(Profile.data.content);
       }
