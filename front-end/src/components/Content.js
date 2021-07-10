@@ -1,7 +1,6 @@
 import './Content.css';
 import {useState, useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
-/*import Profile from './Profile.md';*/
 import axios from 'axios';
 
 function Content(props) {
@@ -13,24 +12,21 @@ function Content(props) {
         styles={width: `calc(70vw - 240px)`};
     }
     let [markdown, setMarkdown] = useState("");
-  
     let URL;
-    if(process.env.NODE_ENV === "development"){
-      URL = 'http://localhost:5000/';
+    console.log(process.env.NODE_ENV);
+    if(process.env.NODE_ENV === 'production'){
+      URL = 'https://willkiss.ml:5000/';
     }else{
-      URL = 'http://willkiss.ml:5000/';
+      URL = 'http://localhost:5000/';
     }
+
     useEffect(() => {
-      async function a() {
-<<<<<<< HEAD
+      async function readContent() {
         const Profile = await axios.get(URL + props.viewstate);
-=======
-        const Profile = await axios.get('/Profile');
->>>>>>> e3637d4b604d25293aefeccf0107248ceeadc54f
         console.log(Profile.data.content);
         setMarkdown(Profile.data.content);
       }
-      a();
+      readContent();
     }, [])
 
     return (

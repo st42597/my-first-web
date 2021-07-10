@@ -14,7 +14,7 @@ const server = app.listen(port, function(){
     console.log(`Express server has started on port ${port}`);
 })
 
-/*app.use('/', require('./router/main'));*/
+app.use(express.static('../front-end/build'));
 
 app.get('/Profile', (req, res) => {
     fs.readFile('./views/Profile.md', 'utf8', (err, data) => {
