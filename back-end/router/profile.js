@@ -6,7 +6,7 @@ const MarkdownIt = require("markdown-it"),
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    fs.readFile(path.join(__dirname, '../views/profile.md'), 'utf8', (err, data) => {
+    fs.readFile(path.join(__dirname, '../views/Profile.md'), 'utf8', (err, data) => {
         if(err) throw err;
         let result = md.render(data);
         res.send({
