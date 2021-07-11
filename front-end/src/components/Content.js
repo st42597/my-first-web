@@ -13,7 +13,6 @@ function Content(props) {
     }
     let [markdown, setMarkdown] = useState("");
     let URL;
-    console.log(process.env.NODE_ENV);
     if(process.env.NODE_ENV === 'production'){
       URL = 'https://willkiss.ml:5000/';
     }else{
@@ -22,9 +21,9 @@ function Content(props) {
 
     useEffect(() => {
       async function readContent() {
-        const Profile = await axios.get(URL + props.viewstate);
-        console.log(Profile.data.content);
-        setMarkdown(Profile.data.content);
+        const profile = await axios.get(URL + props.viewstate);
+        console.log(profile.data.content);
+        setMarkdown(profile.data.content);
       }
       readContent();
     }, [])
