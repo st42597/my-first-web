@@ -3,3 +3,4 @@
   <a href="https://willkiss.ml/">willkiss.ml</a>
    my personal website
 </div>
+<div>Client-Front(react)-Back(express)-LB(LoadBalancer)-AWS EC2</div>
