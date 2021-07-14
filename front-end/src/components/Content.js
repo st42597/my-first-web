@@ -11,7 +11,7 @@ function Content(props) {
     if(props.sidebarstate === 'ON'){
         styles={width: `calc(70vw - 240px)`};
     }
-    let [markdown, setMarkdown] = useState("");
+    let [returnData, setReturnData] = useState("");
     let URL;
     if(process.env.NODE_ENV === 'production'){
       URL = 'https://willkiss.ml:5000/';
@@ -21,19 +21,19 @@ function Content(props) {
 
     useEffect(() => {
       async function readContent() {
-        const profile = await axios.get(URL + props.viewstate);
-        console.log(profile.data.content);
-        setMarkdown(profile.data.content);
+        const ret = await axios.get(URL + props.viewstate);
+        console.log(ret.data);
+        setReturnData(ret.data);
       }
       readContent();
-    }, [])
+    }, [returnData, props.viewstate])
 
     return (
       <div
       className="content-container"
       style={styles}
       >
-        <div dangerouslySetInnerHTML={{__html: markdown} } />
+        <div dangerouslySetInnerHTML={{__html: returnData } }/>
       </div>
     );
   }

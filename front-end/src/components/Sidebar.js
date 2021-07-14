@@ -18,6 +18,7 @@ function Sidebar(props) {
         >
             <ul>
                 <li onClick={() => clickList('Profile')}>Profile</li>
+                <li onClick={() => clickList('Github')}>Github</li>
                 <li onClick={() => clickList('Description')}>Description</li>
             </ul>  
         </div>
