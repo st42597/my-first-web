@@ -6,7 +6,7 @@ const MarkdownIt = require("markdown-it"),
         md = new MarkdownIt();
 
 router.get('/', (req, res) => {
-    res.render('github');
+    res.send("component");
 });
 
 module.exports = router;

@@ -1,7 +1,8 @@
 import './Content.css';
 import {useState, useEffect} from 'react';
-import ReactMarkdown from 'react-markdown';
+import parse from 'html-react-parser';
 import axios from 'axios';
+import Github from './contentList/Github';
 
 function Content(props) {
     let styles;
@@ -22,20 +23,31 @@ function Content(props) {
     useEffect(() => {
       async function readContent() {
         const ret = await axios.get(URL + props.viewstate);
-        console.log(ret.data);
-        setReturnData(ret.data);
+          setReturnData(ret.data);
       }
-      readContent();
-    }, [returnData, props.viewstate])
+      if(props.viewstate === 'Profile') readContent();
+    }, [props.viewstate])
 
-    return (
-      <div
-      className="content-container"
-      style={styles}
-      >
-        <div dangerouslySetInnerHTML={{__html: returnData } }/>
-      </div>
-    );
+    if(props.viewstate === 'Profile'){
+      return (
+        <div
+        className="content-container"
+        style={styles}
+        >
+          {parse(returnData)}
+        </div>
+      );
+    }
+    else if(props.viewstate === 'Github'){
+      return(
+        <div
+        className="content-container"
+        style={styles}
+        >
+          <Github></Github>
+        </div>
+      );
+    }
   }
   
   export default Content;
