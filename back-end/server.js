@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
+const router = express.Router();
 const cors = require("cors");
 const MarkdownIt = require("markdown-it"),
         md = new MarkdownIt();
 
 app.use(cors());
+router.use(cors());
 const port = 5000;
 app.listen(port, function(){
     console.log(`Express server has started on port ${port}`);
