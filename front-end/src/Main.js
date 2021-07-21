@@ -7,7 +7,7 @@ import {useState} from 'react';
 
 function Main() {
   const [sidebarstate, setSidebarstate] = useState('OFF')
-  const [viewstate, setViewstate] = useState('Profile')
+  const [viewstate, setViewstate] = useState('Main')
 
   return (
     <div>
