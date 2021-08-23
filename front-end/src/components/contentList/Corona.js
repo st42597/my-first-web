@@ -11,7 +11,7 @@ function Corona() {
   useEffect(() => {
     async function readContent() {
       const ret = await axios.get(URL + 'Corona');
-      setReturnData(ret.data);
+      setReturnData(ret.data[0].accDefRate._text);
       console.log(ret);
     }
     readContent();
@@ -19,7 +19,7 @@ function Corona() {
   return(
     <div>
       공공 데이터 api 활용 연습을 위한 페이지입니다.      
-      {returnData[0].accDefRate._text}
+      {returnData}
     </div>
   );
 }
