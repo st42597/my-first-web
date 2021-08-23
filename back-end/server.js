@@ -17,6 +17,7 @@ app.set('views', './views');
 
 app.use(express.static('../front-end/build'));
 
+app.use('/Main', require('./router/main'));
 app.use('/Profile', require('./router/profile'));
 app.use('/Github', require('./router/github'));
 app.use('/Corona', require('./router/corona'));

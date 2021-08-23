@@ -21,13 +21,18 @@ function Content(props) {
     }else{
       URL = 'http://localhost:5000/';
     }
-
+    const staticPageList = ['Main', 'Profile'];
     useEffect(() => {
       async function readContent() {
         const ret = await axios.get(URL + props.viewstate);
           setReturnData(ret.data);
       }
-      if(props.viewstate === 'Profile') readContent();
+      for(let i = 0; i < staticPageList.length; i++){
+        if(props.viewstate === staticPageList[i]){
+          readContent();
+          break;
+        }
+      }
     }, [props.viewstate])
     const contentList = [<Home></Home>, <Profile></Profile>, <Github></Github>, <Corona></Corona>];
     let contentNumber = 0;
