@@ -17,8 +17,10 @@ function Sidebar(props) {
         style={styles}
         >
             <ul>
+                <li onClick={() => clickList('Home')}>Home</li>
                 <li onClick={() => clickList('Profile')}>Profile</li>
                 <li onClick={() => clickList('Github')}>Github</li>
+                <li onClick={() => clickList('Corona')}>Corona</li>
                 <li onClick={() => clickList('Description')}>Description</li>
             </ul>  
         </div>

@@ -19,3 +19,4 @@ app.use(express.static('../front-end/build'));
 
 app.use('/Profile', require('./router/profile'));
 app.use('/Github', require('./router/github'));
+app.use('/Corona', require('./router/corona'));

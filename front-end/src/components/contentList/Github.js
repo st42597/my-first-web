@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import GitHubCalendar from 'github-calendar';
 function Github() {
     useEffect(() => {
-        GitHubCalendar(".calendar", "st42597");
+        GitHubCalendar(".calendar", "st42597", { responsive: true });
     })
     
     return(
