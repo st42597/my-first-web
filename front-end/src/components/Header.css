@@ -1,27 +1,27 @@
 .header-container{
-    background: rgb(158, 206, 180);
-    height: 2rem;
-    width: 100vw;
+  background: rgb(158, 206, 180);
+  height: 2rem;
+  width: 100vw;
 }
 .viewStatus{
-    position: absolute;
-    left: 4vw;
-    display: flex;
-    line-height: 2rem;
-    color: white;
-    font-weight: bold;
+  position: absolute;
+  left: 50px;
+  display: flex;
+  line-height: 2rem;
+  color: white;
+  font-weight: bold;
 }
 .clock{
-    position: absolute;
-    right: 4vw;
-    display: flex;
-    line-height: 2rem;
-    color: white;
-    font-weight: bold;
+  position: absolute;
+  right: 50px;
+  display: flex;
+  line-height: 2rem;
+  color: white;
+  font-weight: bold;
 }
 .menu-icon{
-    position: absolute;
-    left: 0.5vw;
-    height: 2rem;
-    width: 2rem;
+  position: absolute;
+  left: 10px;
+  height: 2rem;
+  width: 2rem;
 }

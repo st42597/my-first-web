@@ -1,20 +1,30 @@
-.Side-bar{
-    position: absolute;
-    background: rgb(200, 200, 200);
-    transition: all 1s;
-    width: 200px;
-    height: calc(100vh - 2rem - 40px);
-    padding: 20px;
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: rgb(200, 200, 200);
+  transition: all 1s;
+  width: 240px;
+  height: calc(100vh - 2rem);
 }
-.Side-bar ul{
-    list-style: none;
-    padding-left: 0px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    font-size: inherit;
+.sidebar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  font-size: inherit;
 }
-.Side-bar ul li:hover{
-    background-color: rgb(0, 0, 0, 0.2);
+.sidebar ul li{
+  padding: 8px 20px;
+}
+.sidebar ul li:hover{
+  background-color: rgb(0, 0, 0, 0.2);
+}
+.sidebar-user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  padding: 0px 20px;
+  vertical-align: middle;
 }
