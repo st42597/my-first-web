@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 import Footer from './components/Footer'
 import {useState} from 'react';
+import {BrowserRouter} from 'react-router-dom';
 
 function Main() {
   const [sidebarstate, setSidebarstate] = useState('OFF')
@@ -11,6 +12,7 @@ function Main() {
 
   return (
     <div>
+      <BrowserRouter>
         <Header
         sidebarstate={sidebarstate}
         setSidebarstate={setSidebarstate}
@@ -25,8 +27,9 @@ function Main() {
         viewstate={viewstate}
         />
         <Footer />
+      </BrowserRouter>
     </div>
+
   );
 }
-
 export default Main;

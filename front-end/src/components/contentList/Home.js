@@ -2,10 +2,10 @@ import {useEffect} from 'react';
 function Home() {
   return(
     <div>
-      <h1>my-first-web</h1>
-      <div>front-end : Node.js React Library back-end : Node.js Express Framework</div>
-      <div>Client-Front(react)-Back(express)-LB(LoadBalancer)-AWS EC2</div>
+      <h1>Welcome</h1>
+      <p>개발공부를 위한 개인 웹사이트입니다.</p>
     </div>
   );
 }
+
 export default Home;

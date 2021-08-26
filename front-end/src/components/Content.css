@@ -2,7 +2,7 @@
     position: absolute;
     right: 0;
     height: calc(100vh - 2rem - 200px);
-    padding: 100px 15vw 100px 15vw;
+    width: 50vw;
     transition: all 1s;
     overflow: scroll;
 }

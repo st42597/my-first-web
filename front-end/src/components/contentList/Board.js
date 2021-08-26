@@ -1,9 +1,11 @@
 function Board() {
   return(
     <div>
-      Board
+      <textarea
+      cols="50" rows="10"
+      spellCheck="false"
+      ></textarea>
     </div>
   )
 }
-
 export default Board;
