@@ -1,6 +1,7 @@
 import './Sidebar.css';
 import {useState} from 'react';
 import ReactModal from 'react-modal';
+import {useHistory} from 'react-router-dom';
 
 function Guest(props) {
   let [modalIsOpen, setIsOpen] = useState(false);
@@ -52,7 +53,9 @@ function Sidebar(props) {
   if(props.sidebarstate === 'ON'){
     styles = {transform: `translateX(0)`};
   }
-  const clickList = (post) => {
+  let history = useHistory();
+  const handlePage = (post) => {
+    history.push(post);
     props.setViewstate(post);
   }
   return (
@@ -62,12 +65,12 @@ function Sidebar(props) {
     >
       {accountBlock}
       <ul>
-        <li onClick={() => clickList('Home')}>Home</li>
-        <li onClick={() => clickList('Profile')}>Profile</li>
-        <li onClick={() => clickList('Github')}>Github</li>
-        <li onClick={() => clickList('Board')}>Board</li>
-        <li onClick={() => clickList('Corona')}>Corona</li>
-        <li onClick={() => clickList('Description')}>Description</li>
+        <li onClick={() => handlePage('')}>Home</li>
+        <li onClick={() => handlePage('profile')}>Profile</li>
+        <li onClick={() => handlePage('github')}>Github</li>
+        <li onClick={() => handlePage('board')}>Board</li>
+        <li onClick={() => handlePage('corona')}>Corona</li>
+        <li onClick={() => handlePage('description')}>Description</li>
       </ul>  
     </div>
     );

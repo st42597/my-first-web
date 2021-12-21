@@ -1,6 +1,6 @@
-import './Content.css';
+import './Pages.css';
 import {useState, useEffect} from 'react';
-import {BrowserRouter, Router, Route, useHistory} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Home from './contentList/Home';
 import Profile from './contentList/Profile';
 import Github from './contentList/Github';
@@ -8,7 +8,7 @@ import Corona from './contentList/Corona';
 import Board from './contentList/Board';
 import Description from './contentList/Description';
 
-function Content(props) {
+function Pages(props) {
     let styles;
     if(props.sidebarstate === 'OFF'){
         styles={padding: `100px 25vw`};
@@ -22,10 +22,6 @@ function Content(props) {
     }else{
       URL = 'http://localhost:5000/';
     }
-    let history = useHistory();
-    useEffect(() => {
-      history.push(props.viewstate);
-    }, [props.viewstate]);
 
     return (
       <div
@@ -33,18 +29,14 @@ function Content(props) {
       style={styles}
       >
         {/*{contentList[contentNumber]}*/}
-        <Route path="/Home" component={Home}></Route>
-        <Route path="/Profile" component={Profile}></Route>
-        <Route path="/Board" component={Board}></Route>
-        <Route path="/Github" component={Github}></Route>
-        <Route path="/Corona" component={Corona}></Route>
-        <Route path="/Description" component={Description}></Route>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/profile" component={Profile}></Route>
+        <Route path="/board" component={Board}></Route>
+        <Route path="/github" component={Github}></Route>
+        <Route path="/corona" component={Corona}></Route>
+        <Route path="/description" component={Description}></Route>
       </div>
     );
   }
-
   
-  
-  
-  export default Content;
-  
+  export default Pages;
