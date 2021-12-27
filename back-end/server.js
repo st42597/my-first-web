@@ -8,10 +8,9 @@ md = new MarkdownIt();
 
 app.use(helmet());
 app.use(cors());
-router.use(cors());
 
-const port = 4000;
-app.listen(port, function(){
+const port = process.env.PORT | 4000;
+app.listen(port, () => {
     console.log(`Express server has started on port ${port}`);
 })
 
@@ -20,7 +19,7 @@ app.set('views', './views');
 
 app.use(express.static('../front-end/build'));
 
-app.use('/main', require('./router/main'));
-app.use('/profile', require('./router/profile'));
-app.use('/github', require('./router/github'));
-app.use('/corona', require('./router/corona'));
+app.use('/main', require('./routes/main'));
+app.use('/profile', require('./routes/profile'));
+app.use('/github', require('./routes/github'));
+app.use('/corona', require('./routes/corona'));

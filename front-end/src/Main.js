@@ -8,22 +8,18 @@ import {BrowserRouter} from 'react-router-dom';
 
 function Main() {
   const [sidebarstate, setSidebarstate] = useState('OFF')
-  const [viewstate, setViewstate] = useState('')
 
   return (
     <BrowserRouter>
       <Header
       sidebarstate={sidebarstate}
       setSidebarstate={setSidebarstate}
-      viewstate={viewstate}
       />
       <Sidebar
       sidebarstate={sidebarstate}
-      setViewstate={setViewstate}
       />
       <Pages
       sidebarstate={sidebarstate}
-      viewstate={viewstate}
       />
       <Footer />
     </BrowserRouter>

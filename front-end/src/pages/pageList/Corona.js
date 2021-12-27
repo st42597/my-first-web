@@ -4,9 +4,9 @@ function Corona() {
   let [returnData, setReturnData] = useState();
   let URL;
   if(process.env.NODE_ENV === 'production'){
-    URL = 'https://willkiss.ml:5000/';
+    URL = 'https://willkiss.ml:4000/';
   }else{
-    URL = 'http://localhost:5000/';
+    URL = 'http://localhost:4000/';
   }
   useEffect(() => {
     async function readContent() {

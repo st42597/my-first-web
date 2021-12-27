@@ -53,10 +53,11 @@ function Sidebar(props) {
   if(props.sidebarstate === 'ON'){
     styles = {transform: `translateX(0)`};
   }
+  
   let history = useHistory();
   const handlePage = (post) => {
-    history.push(post);
-    props.setViewstate(post);
+    history.push(post, post);
+    console.log(history.location);
   }
   return (
     <div
