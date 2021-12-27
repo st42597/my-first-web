@@ -1,8 +1,8 @@
 .content-container{
-    position: absolute;
-    right: 0;
-    height: calc(100vh - 2rem - 200px);
-    width: 50vw;
-    transition: all 1s;
-    overflow: scroll;
+  position: absolute;
+  right: 0;
+  height: calc(100vh - 2rem - 200px);
+  width: 50vw;
+  transition: all 1s;
+  overflow: scroll;
 }
