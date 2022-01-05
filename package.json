@@ -4,7 +4,7 @@
     "styled-components": "^5.3.3"
   },
   "scripts": {
-    "start": "concurrently \"cd front-end && npm start\" \"cd back-end && nodemon server.js\"",
-    "install": "concurrently \"cd front-end && npm install\" \"cd back-end && npm install\""
+    "start": "concurrently \"cd front-end && yarn start\" \"cd back-end && nodemon server.js\"",
+    "install": "concurrently \"cd front-end && yarn install\" \"cd back-end && yarn install\""
   }
 }
