@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "concurrently": "^6.2.0"
+    "concurrently": "^6.2.0",
+    "styled-components": "^5.3.3"
   },
   "scripts": {
     "start": "concurrently \"cd front-end && npm start\" \"cd back-end && nodemon server.js\"",
