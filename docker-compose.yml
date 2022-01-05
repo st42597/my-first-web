@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  front-end:
+    build: ./front-end
+    container_name: front-end
+    ports:
+      - "3000:3000"
+    command: ["yarn", "start"]
+    
+  back-end:
+    build: ./back-end
+    container_name: back-end
+    ports:
+      - "4000:4000"
+    command: ["node", "server.js"]
+    
