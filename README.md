@@ -1,6 +1,6 @@
 <h1>my-first-web</h1>
-<div>front-end : react back-end : node.js |
-  <a href="https://willkiss.ml/">willkiss.ml</a>
+<div>front: react, back: express, proxy-server: nginx |
+  <a href="https://willki.dev/">willki.dev</a>
    my personal website
 </div>
-<div>Client-Front(react)-Back(express)-LB(LoadBalancer)-AWS EC2</div>
+<div>Client-Nginx-React,Express</div>
