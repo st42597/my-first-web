@@ -4,7 +4,7 @@
 
 ---
 
-Problem Solver & Web Developer
+Problem Solver
 
 간결하고 효율적인 알고리즘, 코드 설계를 지향합니다.
 
@@ -14,8 +14,7 @@ Problem Solver & Web Developer
 
 - Email | st42597@gmail.com
 - Github | [github.com/st42597](https://github.com/st42597)
-- Instagram | [instagram.com/study_willkiss](https://www.instagram.com/study_willkiss/)
-- My Website | [willkiss.ml](http://willkiss.ml)
+- Instagram | [instagram.com/study_willki](https://www.instagram.com/study_willkiss/)
 
 ## 🔧Technical Skills
 
@@ -23,17 +22,18 @@ Problem Solver & Web Developer
 
 ### Programming Language
 
-- C, C++, Python, JavaScript
+- C, C++, JAVA, Python, JavaScript
 
 ### Front-end
 
 - HTML5, CSS3, JS(ES6)
 - React
+- Vue2
 
 ### Back-end
 
-- Node.js
-- Flask
+- Express
+- Django
 
 ### DevOps
 
@@ -56,15 +56,32 @@ Problem Solver & Web Developer
 
 - 2020 ICPC Seoul Regional Preliminary Contest
 
-       56th place (team css680) [Scoreboard](http://icpckorea.org/2020/preliminary/scoreboard/dbda78f0e4/)
+    56th place (team css680) [Scoreboard](http://icpckorea.org/2020/preliminary/scoreboard/dbda78f0e4/)
 
-- 2020 Shake!
-
-       10th place [Scoreboard](https://www.acmicpc.net/contest/scoreboard/585)
-
+- 2020 경인지역 6개 대학 연합 프로그래밍 대회 Shake!
+    
+    10위 [Scoreboard](http://shake.codes/results/2020/index.html)
+    
 - 2021 ICPC Seoul Regional Preliminary Contest
 
-       30th place (team L2C) [Scoreboard](http://static.icpckorea.net/2021/scoreboard_preliminary/)
+    30th place (team L2C) [Scoreboard](http://static.icpckorea.net/2021/scoreboard_preliminary/)
+
+- 2021 ICPC Seoul Regional Contest
+    
+    32th place (team L2C) [Scoreboard](http://static.icpckorea.net/2021/scoreboard_regional/)
+    
+- 1st SKKU Programming Contest
+    
+    Excellence Award
+    
+- 2021 경인지역 6개 대학 연합 프로그래밍 대회 Shake!
+    
+    8위 / Special Prize [Scoreboard](http://shake.codes/results/2021/index.html)
+    
+- 2022 성균관대학교 프로그래밍 경진대회 출제/운영진
+    
+    [https://www.acmicpc.net/contest/view/771](https://www.acmicpc.net/contest/view/771)
+    
 
 ## 🤺Activities
 
@@ -72,28 +89,36 @@ Problem Solver & Web Developer
 
 ### Problem Solving
 
-- Problem Solving Club NPC
-    - Advanced Class
-    - Learn Segment Tree, Flow, CHT...
-    - Participated in Development,
-        
-        NPC Website Front-end
-        
-        [github.com/st42597/NPC_website](https://github.com/st42597/NPC_website)
-        
+- Problem Solving Club, NPC
+    - Serve vice president in 2022
+    - Learn Data Structure and Algorithm
     - Manage club and give mentoring
 - Algorithm & Data Structure
     - GitHub | [github.com/st42597/PS](https://github.com/st42597/PS/tree/master/Algorithm)
-- Baekjoon OnlineJudge(BOJ)
-    - 1150 Problems Solved
-        
-        Rating Diamond5
+- Baekjoon Online Judge(BOJ)
+    - 187th Ranked
+    - 1568 Problems Solved
+    - Rating Diamond 4
         
         [acmicpc.net/user/st42597](https://www.acmicpc.net/user/st42597)
         
         [solved.ac/profile/st42597](https://solved.ac/profile/st42597)
         
-- CodeForces
+- CIT Coding Academy
+    - Teach USACO(2021.09~)
+    - Manage KOI Curriculum
+
+### Development
+
+- SKKU Online Judge, SKKUDING
+    - Participate in Development
+        
+        SKKU Online Judge
+        
+        OnlineJudge | [https://npc.skku.edu/](https://npc.skku.edu/)
+        
+        [https://github.com/skkuding/skku-coding-platform](https://github.com/skkuding/skku-coding-platform)
+        
 
 ## Project Experience
 
