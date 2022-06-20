@@ -1,6 +1,6 @@
 FROM node:16.13.1
 
-WORKDIR /back-end
+WORKDIR /backend
 COPY . ./
 
 EXPOSE 4000
