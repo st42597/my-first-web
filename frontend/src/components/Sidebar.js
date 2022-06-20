@@ -1,7 +1,7 @@
-import './Sidebar.css';
+import './css/Sidebar.css';
 import {useState} from 'react';
 import ReactModal from 'react-modal';
-import {useHistory} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Guest(props) {
   let [modalIsOpen, setIsOpen] = useState(false);
@@ -54,24 +54,25 @@ function Sidebar(props) {
     styles = {transform: `translateX(0)`};
   }
   
-  let history = useHistory();
-  const handlePage = (post) => {
-    history.push(post, post);
-    console.log(history.location);
-  }
   return (
-    <div
-    className="sidebar"
-    style={styles}
-    >
+    <div className="sidebar" style={styles}>
       {accountBlock}
       <ul>
-        <li onClick={() => handlePage('')}>Home</li>
-        <li onClick={() => handlePage('profile')}>Profile</li>
-        <li onClick={() => handlePage('github')}>Github</li>
-        <li onClick={() => handlePage('board')}>Board</li>
-        <li onClick={() => handlePage('corona')}>Corona</li>
-        <li onClick={() => handlePage('description')}>Description</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/profile">Profile</Link>
+        </li>
+        <li>
+          <Link to="/github">Github</Link>
+        </li>
+        <li>
+          <Link to="/board">Board</Link>
+        </li>
+        <li>
+          <Link to="/corona">Corona</Link>
+        </li>
       </ul>  
     </div>
     );

@@ -18,10 +18,7 @@ function Pages(props) {
   }
 
   return (
-    <div
-    className="content-container"
-    style={styles}
-    >
+    <div className="content-container" style={styles}>
       <Route exact path="/" component={Home}></Route>
       <Route path="/profile" component={Profile}></Route>
       <Route path="/board" component={Board}></Route>

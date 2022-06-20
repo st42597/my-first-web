@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const router = express.Router();
 const helmet = require('helmet');
 const cors = require('cors');
 const MarkdownIt = require('markdown-it');
@@ -19,7 +18,7 @@ app.set('views', './views');
 
 app.use(express.static('../front-end/build'));
 
-app.use('/main', require('./routes/main'));
+app.use('/home', require('./routes/home'));
 app.use('/profile', require('./routes/profile'));
 app.use('/github', require('./routes/github'));
 app.use('/corona', require('./routes/corona'));

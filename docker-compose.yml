@@ -10,6 +10,17 @@ services:
       - ./frontend:/frontend
     command: ["yarn", "start"]
     
+  mongo:
+    image: mongo
+    container_name: mongo
+    expose:
+      - "27019"
+    volumes:
+      - ./mongo/data:/mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "abc"
+      MONGO_INITDB_ROOT_PASSWORD: "1234"
+
   back:
     build: ./backend
     container_name: back
@@ -17,7 +28,9 @@ services:
       - "4000:4000"
     volumes:
       - ./backend:/backend
-    command: ["node", "server.js"]
+    command: ["nodemon", "server.js"]
+    depends_on:
+      - mongo
 
   nginx:
     build: ./nginx
@@ -30,3 +43,4 @@ services:
     depends_on:
       - front
       - back
+      - mongo

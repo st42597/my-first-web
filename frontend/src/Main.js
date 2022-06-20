@@ -11,16 +11,9 @@ function Main() {
 
   return (
     <BrowserRouter>
-      <Header
-      sidebarstate={sidebarstate}
-      setSidebarstate={setSidebarstate}
-      />
-      <Sidebar
-      sidebarstate={sidebarstate}
-      />
-      <Pages
-      sidebarstate={sidebarstate}
-      />
+      <Header sidebarstate={sidebarstate} setSidebarstate={setSidebarstate} />
+      <Sidebar sidebarstate={sidebarstate} />
+      <Pages sidebarstate={sidebarstate} />
       <Footer />
     </BrowserRouter>
   );
